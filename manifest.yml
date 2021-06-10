@@ -1,0 +1,9 @@
+---
+applications:
+  - name: cdsplay
+    path: srv/target/cdsplay-exec.jar
+    random-route: true
+    memory: 1024M
+    instances: 1
+    buildpacks:
+      - java_buildpack

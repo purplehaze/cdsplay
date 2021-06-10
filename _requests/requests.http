@@ -7,6 +7,14 @@ GET http://localhost:8080/api/catalog/Buildings
 GET http://localhost:8080/api/catalog/sayHello(to='Roman')
 
 ###
+GET http://localhost:8080/api/catalog/sayKotlinHello(to='RomansPurpleHaze')
+
+
+###
+GET http://cdsplay-silly-jackal-em.cfapps.eu10.hana.ondemand.com/api/catalog/sayKotlinHello(to='RomansPurpleHaze')
+
+
+###
 GET http://localhost:8080/api/catalog/Books(2)/CatalogService.getBooksCount(likeName='foo')
 
 ###

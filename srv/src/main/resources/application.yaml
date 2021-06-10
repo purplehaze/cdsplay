@@ -1,6 +1,6 @@
 ---
 spring:
-  config.activate.on-profile: default
+#  config.activate.on-profile: default
   datasource:
     url: "jdbc:sqlite:file::memory:?cache=shared"
     driver-class-name: org.sqlite.JDBC
@@ -14,5 +14,5 @@ logging:
     org.springframework.jdbc.core: trace
 cds:
   odata-v4.endpoint.path: "/api"
-  # security:
-  #   authenticate-unknown-endpoints: false
+  security:
+   authenticate-unknown-endpoints: true
