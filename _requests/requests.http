@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/catalog/Books
+
+### all buildings
+GET http://localhost:8080/api/catalog/Buildings
+
+###
+GET http://localhost:8080/api/catalog/sayHello(to='Roman')
+
+###
+GET http://localhost:8080/api/catalog/Books(2)/CatalogService.getBooksCount(likeName='foo')
+
+###
+POST http://localhost:8080/api/catalog/addBuilding
+Content-Type: application/json 
+
+{
+    "name": "Romans Tower",
+    "height": 2000
+}
+
+###
+POST http://localhost:8080/api/catalog/Books(2)/CatalogService.reduceStock
+Content-Type: application/json 
+
+{
+    "amount" : 1
+}
+
+
